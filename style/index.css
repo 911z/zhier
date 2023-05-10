@@ -4,6 +4,10 @@ body {
 .table-container {
   margin: 0 auto;
 }
+
+.table-container tr {
+  border-radius: 10px;
+}
 .table-container tr > td {
   border: 1px solid red;
   width: 2.6667rem;

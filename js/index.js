@@ -10,10 +10,17 @@ for (let td of tds) {
 }
 
 document.getElementById('search-btn').addEventListener('click', () => {
+  $.ajax({
+    url: 'http://123.57.109.30:3006/api/getbooks',
+    type: 'get',
+    dataType: 'json',
+    success: (res) => console.log(res),
+  });
+
   for (let id in tdItems) {
     tdItems[id].className = '';
   }
 
-  tdItems['line' + oldPosition].className = 'red';
-  tdItems['line' + currentPosition].className = 'blue';
+  tdItems['line' + oldPosition].className = 'blue';
+  tdItems['line' + currentPosition].className = 'red';
 });
