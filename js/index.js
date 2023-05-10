@@ -14,8 +14,11 @@ document.getElementById('search-btn').addEventListener('click', () => {
     url: 'http://123.57.109.30:3006/api/getbooks',
     type: 'get',
     dataType: 'json',
+    async: false,
     success: (res) => console.log(res),
   });
+
+  console.log(1);
 
   for (let id in tdItems) {
     tdItems[id].className = '';
