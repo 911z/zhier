@@ -1,8 +1,8 @@
 .tab-bar {
   display: flex;
   height: 1.0667rem;
-  /* background-color: #fff; */
-  background-color: #4f8b85;
+  background-color: #2c635d;
+  /* background-image: linear-gradient(to right, #2c635d, #4c8d85, #63a29a); */
   font-size: 0.4rem;
   text-align: center;
   line-height: 1.0667rem;

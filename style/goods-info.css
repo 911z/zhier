@@ -7,7 +7,7 @@
 
 .shop-img {
   width: 100%;
-  height: 5.3333rem;
+  height: 8.3333rem;
 }
 
 .cover {
@@ -18,7 +18,8 @@
   /* padding: 0 0.5333rem; */
   justify-content: space-between;
   font-size: 0.2667rem;
-  background-color: #4f8b85;
+  /* background-color: #4f8b85; */
+  background-image: linear-gradient(to right, #2c635d, #63a29a);
   padding: 0.1333rem 0.2667rem;
   box-sizing: border-box;
   width: 100%;
@@ -70,11 +71,12 @@
 .info .price-container .quan .after {
   margin-right: 0.1333rem;
   font-size: 0.4rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .info .price-container .quan .count {
   font-size: 0.4rem;
+  font-weight: normal;
 }
 
 .info .price-container .zhekou {
@@ -86,11 +88,6 @@
 .info .price-container .zhekou .count {
   font-size: 0.6667rem;
   font-weight: normal;
-}
-
-.info .price-container .zhekou .text {
-  margin-top: 0.1333rem;
-  margin-left: 0.0667rem;
 }
 
 .money {
