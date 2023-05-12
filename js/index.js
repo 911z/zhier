@@ -1,5 +1,5 @@
-let oldPosition = '1';
-let currentPosition = '2-1';
+let oldPosition;
+let currentPosition;
 let value = '';
 
 const inputEl = document.getElementById('search-input');
@@ -22,25 +22,24 @@ document.getElementById('search-btn').addEventListener('click', () => {
 
   // value = inputEl.value;
 
-  // $.ajax({
-  //   url: 'http://192.168.100.95:8082/zhier/query',
-  //   data: {
-  //     code: 'A1001',
-  //   },
-  //   type: 'get',
-  //   dataType: 'json',
-  //   async: false,
-  //   success: (res) => {
-  //     oldPosition = res.data.oldLocation;
-  //     currentPosition = res.data.nowLocation;
-  //   },
-  // });
-  // tdItems[oldPosition].classList.add('blue');
-  // tdItems[currentPosition].classList.add('red');
+  $.ajax({
+    url: 'http://192.168.100.95:8082/zhier/query',
+    data: {
+      code: 'A1001',
+    },
+    type: 'get',
+    dataType: 'json',
+    async: false,
+    success: (res) => {
+      oldPosition = res.data.oldLocation;
+      currentPosition = res.data.nowLocation;
+    },
+  });
+  tdItems[oldPosition].classList.add('blue');
+  tdItems[currentPosition].classList.add('red');
 });
 
 document.getElementById('back-btn').addEventListener('click', () => {
-  console.log(1);
   containerEl[0].classList.add('isHidden');
   goodsInfoEl[0].classList.remove('isHidden');
 });
