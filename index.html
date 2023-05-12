@@ -8,34 +8,82 @@
 	<title>只二</title>
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/index.css">
+	<link rel="stylesheet" href="./style/tabbar.css">
+	<link rel="stylesheet" href="./style/goods-info.css">
 </head>
 
 <body>
-	<div class="container">
 
-		<div class="list">
-			<span id="A0">A-1</span>
-			<span id="A1">A-2</span>
-			<span id="A2">A-3</span>
-			<span id="A3">A-4</span>
-			<span id="A4">A-5</span>
-
-			<span id="B0">B-1</span>
-			<span id="B1">B-2</span>
-			<span id="B2">B-3</span>
-			<span id="B3">B-4</span>
-			<span id="B4">B-5</span>
+	<div class="goods-info-container">
+		<div class="tab-bar">
+			<div class="title">商品详情</div>
 		</div>
 
-		<div class="search-container">
-			<div class="search-left">
-				<!-- <img class="search-icon" src="./asstes/images/search.svg" /> -->
-				<input id="search-input" class="tl-price-input" type="text" placeholder="请输入物品编号">
+		<div class="goods-container">
+			<img class="shop-img" src="./assets/images/goods.webp" />
+			<div class="cover">
+				<div class="text">100%商品经过资深鉴别~正品保障~逐件查验~极速发货</div>
+				<div class="right">></div>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="price-container">
+				<div class="left">
+					<div class="price">
+						<span class="money">¥</span>
+						<div class="count">10000</div>
+					</div>
+					<div class="quan">
+						<span class="after">券后</span>
+						<div class="count">¥9790</div>
+					</div>
+				</div>
+				<div class="zhekou">
+					<span class="count">9.8</span>
+					<span class="text">新 ></span>
+				</div>
+			</div>
+		</div>
+		<div class="search-right">
+			<button id="search-btn" class="ant-btn ant-btn-red search-btn">查 找</button>
+		</div>
+	</div>
+
+	<div class="container isHidden">
+		<div class="tab-bar">
+			<div class="title">只二测试仓库</div>
+		</div>
+		<div class="list">
+			<div class="left">
+				<span id="A0">A-1</span>
+				<span id="A1">A-2</span>
+				<span id="A2">A-3</span>
+				<span id="A3">A-4</span>
+				<span id="A4">A-5</span>
+			</div>
+			<div class="right">
+				<span id="B0">B-1</span>
+				<span id="B1">B-2</span>
+				<span id="B2">B-3</span>
+				<span id="B3">B-4</span>
+				<span id="B4">B-5</span>
 			</div>
 			<div class="search-right">
-				<button id="search-btn" class="ant-btn ant-btn-red">搜 索</button>
+				<button id="back-btn" class="ant-btn ant-btn-red">返 回</button>
 			</div>
 		</div>
+
+		<!-- <div class="search-container"> -->
+		<!-- <div class="search-left"> -->
+		<!-- <img class="search-icon" src="./asstes/images/search.svg" /> -->
+		<!-- <input id="search-input" class="tl-price-input" type="text" placeholder="请输入物品编号"> -->
+		<!-- </div> -->
+		<!-- <div class="search-right">
+			<button id="search-btn" class="ant-btn ant-btn-red">查 找</button>
+		</div> -->
+	</div>
+
 	</div>
 </body>
 <script src="./js/flexible.js"></script>
